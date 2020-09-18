@@ -1,5 +1,8 @@
 html {
   box-sizing: border-box;
+  font-family: Georgia, serif;
+  line-height: 1.5;
+  background-color: #f2f1ed;
 }
 
 *,
@@ -15,4 +18,37 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
+}
+
+.banner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 4em;
+}
+
+.pano {
+  grid-column: 1 / -1;
+  grid-row: 1 / -1;
+  z-index: 1;
+}
+
+.logo {
+  grid-column: 1;
+  grid-row: 2
+}
+
+nav {
+  display: flex;
+  color: #fff;
+  grid-column: 3;
+  grid-row: 1;
+}
+
+ul {
+  text-decoration: underline;
+  list-style-type: none;
+}
+
+nav, h2 {
+  font-family: "Patua One", sans-serif;
 }
