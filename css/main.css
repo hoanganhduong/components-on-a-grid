@@ -51,6 +51,10 @@ nav, h2 {
   font-family: "Patua One", sans-serif;
 }
 
+h2 {
+  color: #30658d;
+}
+
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
