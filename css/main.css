@@ -18,37 +18,48 @@ img {
 header {
   /* Remove the <header> box and allow us to directly apply header’s children to the grid. */
   display: contents;
-}
-
-.banner {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto 4em;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto 10em;
 }
 
 .pano {
   grid-column: 1 / -1;
   grid-row: 1 / -1;
-  z-index: 1;
 }
 
 .logo {
   grid-column: 1;
-  grid-row: 2
+  grid-row: 2;
+  z-index: 1;
 }
 
 nav {
   display: flex;
   color: #fff;
-  grid-column: 3;
+  grid-column: 2 / -1;
   grid-row: 1;
 }
 
 ul {
   text-decoration: underline;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 nav, h2 {
   font-family: "Patua One", sans-serif;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+figure:first-child {
+  grid-column: 1;
+}
+
+figure:nth-child(2) {
+  grid-column: 2;
 }
