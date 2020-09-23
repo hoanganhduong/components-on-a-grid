@@ -42,7 +42,8 @@ body {
   grid-row: 2;
   z-index: 1;
   width: 50%;
-  align-self: baseline;
+  align-self: end;
+
 }
 
 nav {
